@@ -1,0 +1,92 @@
+/*VARIABLES*/
+:root{}
+
+/*APPLY-TO-ALL*/
+.pg{}
+
+.digit{}
+
+.segments{}
+
+.hide{}
+
+.on{}
+
+/*CARD*/
+.contentCard{}
+
+
+/*CARD-HEADER*/
+.contentCard__head{}
+
+.head__title{}
+
+/*CARD-MAIN-CONTENT*/
+.contentCard__numBox{}
+
+.digit{}
+
+.segment{}
+
+.digit:nth-child(1){}
+
+.digit:nth-child(1) .segment:nth-child(1){}
+
+.digit:nth-child(1) .segment:nth-child(2){}
+
+.digit:nth-child(1) .segment:nth-child(3){}
+
+.digit:nth-child(1) .segment:nth-child(4){}
+
+.digit:nth-child(1) .segment:nth-child(5){}
+
+.digit:nth-child(1) .segment:nth-child(6){}
+
+.digit:nth-child(1) .segment:nth-child(7){}
+
+.digit:nth-child(2){}
+
+.digit:nth-child(2) .segment:nth-child(1){}
+
+.digit:nth-child(2) .segment:nth-child(2){}
+
+.digit:nth-child(2) .segment:nth-child(3){}
+
+.digit:nth-child(2) .segment:nth-child(4){}
+
+.digit:nth-child(2) .segment:nth-child(5){}
+
+.digit:nth-child(2) .segment:nth-child(6){}
+
+.digit:nth-child(2) .segment:nth-child(7){}
+
+.digit:nth-child(3){}
+
+.digit:nth-child(3) .segment:nth-child(1){}
+
+.digit:nth-child(3) .segment:nth-child(2){}
+
+.digit:nth-child(3) .segment:nth-child(3){}
+
+.digit:nth-child(3) .segment:nth-child(4){}
+
+.digit:nth-child(3) .segment:nth-child(5){}
+
+.digit:nth-child(3) .segment:nth-child(6){}
+
+.digit:nth-child(3) .segment:nth-child(7){}
+
+/*CARD-FOOTER*/
+.contentCard__foot{}
+
+/*FOOTER-INPUT-AREA*/
+.guessInputContainer{}
+
+.guessInputContainer input{}
+
+.guessButton{}
+
+/*FOOTER-REPLAY-AREA*/
+.replayButtonContainer{}
+
+.replayButton{}
