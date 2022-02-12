@@ -7,6 +7,10 @@
     <meta name="author" content="Leo Christen Macedo - leo.christenmacedo@gmail.com">
     <meta name="description" content="Welcome, this funny little game was developed to a test on my front-end skills, especificaly in HTML5, CSS3 and Vanilla JS, I hope that this page help another people who are entering in the development area, so peace and have a good life you all ♥️">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -19,37 +23,43 @@
         <!--Using the semantic HTML tags I made here a base structure of the card where the game is indeed happening-->
         <header class="contentCard__head">
             <h1 class="head__title">Qual é o número?</h1>
+            <div class="divider"></div>
         </header>
 
-        <main class="contenCard__numBox" id="numBox">
+        <main class="contentCard__numBox" id="numBox">
 
-            <!--All these 'div's are the led digits, and inside of each them there are the led segments, that in CSS and JS will show or not on the screen-->
-            <div class="digit">
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-            </div>
-            <div class="digit">
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-            </div>
-            <div class="digit">
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
-                <div class="segment"></div>
+            <!--Here will be displayed the match result-->
+            <h2 class="numBox__title" id="resultText">teste</h2>
+
+            <div class="numBox__nums">
+                <!--All these 'div's are the led digits, and inside of each them there are the led segments, that in CSS and JS will show or not on the screen-->
+                <div class="digit">
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                </div>
+                <div class="digit">
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                </div>
+                <div class="digit">
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                    <div class="segment"></div>
+                </div>
             </div>
         </main>
         
@@ -59,7 +69,7 @@
                 <input type="text" placeholder="digite o palpite">
                 <button type="button" id="guessButton">Enviar</button>
             </div>
-            <div class="replayBttnContainer" id="replayBttnBox">
+            <div class="replayBttnContainer hide" id="replayBttnBox">
                 <button type="button" id="replayButton"><span>↻</span> Nova Partida</button>
             </div>
         </footer>
