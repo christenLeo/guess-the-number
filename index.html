@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leo Christen Macedo - leo.christenmacedo@gmail.com">
+    <meta name="description" content="Welcome, this funny little game was developed to a test on my front-end skills, especificaly in HTML5, CSS3 and Vanilla JS, I hope that this page help another people who are entering in the development area, so peace and have a good life you all ♥️">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Guess the right number</title>
+</head>
+<body class="pg">
+    <!--Here I created an card to wrap all page content, cause I can use it on CSS to make the desygn more mobile friendly-->
+    <div class="contentCard" id="card">
+
+        <!--Using the semantic HTML tags I made here a base structure of the card where the game is indeed happening-->
+        <header class="contentCard__head">
+            <h1 class="head__title">Qual é o número?</h1>
+        </header>
+
+        <main class="contenCard__numBox" id="numBox">
+
+            <!--All these 'div's are the led digits, and inside of each them there are the led segments, that in CSS and JS will show or not on the screen-->
+            <div class="digit">
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+            </div>
+            <div class="digit">
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+            </div>
+            <div class="digit">
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+                <div class="segment"></div>
+            </div>
+        </main>
+        
+        <!--Here on the footer of the card I will create a switch using DOM manipulation to set wich container show when the game is happenig and when it ends.-->
+        <footer class="contentCard__foot">
+            <div class="guessInputContainer" id="guessInputBox">
+                <input type="text" placeholder="digite o palpite">
+                <button type="button" id="guessButton">Enviar</button>
+            </div>
+            <div class="replayBttnContainer" id="replayBttnBox">
+                <button type="button" id="replayButton"><span>↻</span> Nova Partida</button>
+            </div>
+        </footer>
+    </div>
+
+    <!--So that is it here on the HTML5 part, please, if you want, dont esitate in send me feedbacks!-->
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
