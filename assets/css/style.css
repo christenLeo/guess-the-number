@@ -10,9 +10,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     height: 100vh;
     padding: 2rem;
     font-family: var(--font);
+    transition: 0.5s;
 }
 
 .divider{
@@ -22,15 +24,13 @@
     background: lightgrey;
 }
 
-.digit{}
-
-.segments{}
-
 .hide{
     display: none;
 }
 
-.on{}
+.segment.on{
+    background: #000;
+}
 
 /*CARD*/
 .contentCard{
@@ -51,6 +51,7 @@
 }
 
 .head__title{
+    text-align: center;
     font-size: 1.55rem;
     text-transform: uppercase;
     background: -webkit-linear-gradient(#EF6C00, #DB6300);
@@ -58,7 +59,7 @@
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     padding-top: 2rem;
-    margin-bottom: 0.45rem;
+    margin-bottom: 0.85rem;
 }
 
 /*CARD-MAIN-CONTENT*/
@@ -86,80 +87,128 @@
     height: 35%;
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse;
     position: absolute;
     bottom: 35%;
 }
 
 .digit{
-    border: 1px solid black;
-    height: 100%;
+    height: 130px;
     width: 35%;
+    position: relative;
+    padding: 0.55rem; 
 }
 
 .segment{
     background: lightgray;
-
+    position: absolute;
 }
 
-.digit:nth-child(1){}
+.digit .segment:nth-child(1){
+    width: 60px;
+    height: 10.98px;
+    left: 14.63%;
+    top: 0.45rem;
+    clip-path: polygon(-2% 0, 102% 0, 80% 100%, 20% 100%);
+    border-radius: 2rem;
+}
 
-.digit:nth-child(1) .segment:nth-child(1){}
+.digit .segment:nth-child(2){
+    height: 55px;
+    width: 11.74px;
+    right: 0.80rem;
+    top: 0.6rem;
+    clip-path: polygon(0 17.75%, 100% 0, 100% 102%, 0 82.45%);
+    border-radius: 1rem;
+}
 
-.digit:nth-child(1) .segment:nth-child(2){}
+.digit .segment:nth-child(3){
+    height: 55px;
+    width: 11.74px;
+    right: 0.80rem;
+    bottom: 0.80rem;
+    clip-path: polygon(0 17.75%, 100% -2%, 100% 102%, 0 82.45%);
+    border-radius: 1rem;
+}
 
-.digit:nth-child(1) .segment:nth-child(3){}
+.digit .segment:nth-child(4){
+    width: 60px;
+    height: 10.98px;
+    margin: 10px auto;
+    bottom: 0.035rem;
+    left: 14.63%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    border-radius: 1rem;
+}
 
-.digit:nth-child(1) .segment:nth-child(4){}
+.digit .segment:nth-child(5){
+    height: 55px;
+    width: 11.74px;
+    bottom: 0.80rem;
+    clip-path: polygon(0 -2%, 100% 17.75%, 100% 82.45%, 0% 102%);
+    border-radius: 1rem;
+}
 
-.digit:nth-child(1) .segment:nth-child(5){}
+.digit .segment:nth-child(6){
+    height: 55px;
+    width: 11.74px;
+    top: 0.6rem;
+    clip-path: polygon(0 0%, 100% 17.75%, 100% 82.45%, 0% 102%);
+    border-radius: 1rem;
+}
 
-.digit:nth-child(1) .segment:nth-child(6){}
-
-.digit:nth-child(1) .segment:nth-child(7){}
-
-.digit:nth-child(2){}
-
-.digit:nth-child(2) .segment:nth-child(1){}
-
-.digit:nth-child(2) .segment:nth-child(2){}
-
-.digit:nth-child(2) .segment:nth-child(3){}
-
-.digit:nth-child(2) .segment:nth-child(4){}
-
-.digit:nth-child(2) .segment:nth-child(5){}
-
-.digit:nth-child(2) .segment:nth-child(6){}
-
-.digit:nth-child(2) .segment:nth-child(7){}
-
-.digit:nth-child(3){}
-
-.digit:nth-child(3) .segment:nth-child(1){}
-
-.digit:nth-child(3) .segment:nth-child(2){}
-
-.digit:nth-child(3) .segment:nth-child(3){}
-
-.digit:nth-child(3) .segment:nth-child(4){}
-
-.digit:nth-child(3) .segment:nth-child(5){}
-
-.digit:nth-child(3) .segment:nth-child(6){}
-
-.digit:nth-child(3) .segment:nth-child(7){}
+.digit .segment:nth-child(7){
+    width: 53px;
+    height: 11.80px;
+    margin: 0 auto;
+    bottom: 46.75%;
+    left: 18.70%;
+    clip-path: polygon(12% 0%, 88% 0%, 100% 50%, 88% 100%, 12% 100%, 0% 50%);
+}
 
 /*CARD-FOOTER*/
-.contentCard__foot{}
-
-/*FOOTER-INPUT-AREA*/
-.guessInputContainer{}
-
-.guessInputContainer input{}
-
-.guessButton{}
 
 /*FOOTER-REPLAY-AREA*/
-.replayButtonContainer{}
+.replayBttnContainer{
+    position: absolute;
+    bottom: 4.5rem;
+    left: 22.25%;
+}
 
-.replayButton{}
+.replayBttnContainer button{
+    background: linear-gradient(rgb(75, 73, 73), rgb(141, 137, 137));
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 0.35rem;
+    line-height: 5px;
+}
+.replayBttnContainer button span{
+    font-size: 1.55rem;
+}
+
+/*FOOTER-INPUT-AREA*/
+.guessInputContainer{
+    display: flex;
+    align-items: center;
+}
+
+.guessInputContainer input{
+    border: lightgrey 1px solid;
+    border-radius: 0.25rem;
+    padding-left: 1rem;
+    height: 36px;
+    outline-color: #DB6300;
+}
+
+.guessInputContainer button{
+    height: 40px;
+    margin-left: 11px;
+    border: none;
+    padding: 0 1rem;
+    background: linear-gradient(#EF6C00, #DB6300);
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+}
