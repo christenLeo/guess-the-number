@@ -11,10 +11,10 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 700px;
     padding: 2rem;
     font-family: var(--font);
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .divider{
@@ -73,13 +73,15 @@
 }
 .numBox__title{
     width: 100%;
-    margin-bottom: 75%;
+    margin-bottom: 120%;
+    margin-left: -3.25px;
     text-align: center;
     font-size: 1.5rem;
     background: -webkit-linear-gradient(#EF6C00, #DB6300);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
+
 }
 
 .numBox__nums{
@@ -89,12 +91,12 @@
     justify-content: center;
     flex-direction: row-reverse;
     position: absolute;
-    bottom: 35%;
+    bottom: 40%;
 }
 
 .digit{
     height: 130px;
-    width: 35%;
+    width: 5.55rem;
     position: relative;
     padding: 0.55rem; 
 }
@@ -212,3 +214,36 @@
     text-transform: uppercase;
     border-radius: 0.25rem;
 }
+
+/*BREAKPOINTS*/
+@media (min-width: 700px) {
+    .pg{
+        height: 90vh;
+    }
+    .head__title{
+        font-size: 3rem;
+    }
+    .numBox__title{
+        margin-top: 15.5rem;
+        font-size: 2rem;
+    }
+    .replayBttnContainer{
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+    }
+    .replayBttnContainer button{
+        font-size: 1.2rem;
+    }
+    .guessInputContainer{
+        margin-bottom: 10rem;
+    }
+    .guessInputContainer input{
+        font-size: 1.25rem;
+        height: 3.25rem;
+        width: 15.5rem;
+    }
+    .guessInputContainer button{
+        font-size: 1.35rem;
+        height: 3.5rem;
+    }
+}   
